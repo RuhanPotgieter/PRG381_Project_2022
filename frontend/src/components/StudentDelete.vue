@@ -1,6 +1,6 @@
 <template>
     <div class="modal">
-        <h1>Are you sure you want to delete</h1>
+        <h1 style="margin-top:0">Are you sure you want to delete</h1>
         <h3>{{ student.student_name }}?</h3>
         <button>Delete</button>
         <button class="cancel" @click="cancel">Cancel</button>

@@ -8,6 +8,13 @@
   },
   {
     "$formkit": "text",
+    "name": "surnamname",
+    "label": "Student Surname",
+    "help": "This is the surname of the student",
+    "validation": "required"
+  },
+  {
+    "$formkit": "text",
     "name": "adress",
     "label": "Student Address",
     "help": "The residential address of the student",

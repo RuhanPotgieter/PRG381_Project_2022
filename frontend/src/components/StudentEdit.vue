@@ -1,7 +1,10 @@
 <template>
     <div class="modal">
-        <button class="edit-cancel" @click="cancel">✖</button>
-        <FormKit type="form" style="min-width: 500px; background-color: lightgrey; padding: 50px;">
+        <div class="header">
+            <h2>Update Student</h2>
+            <button class="edit-cancel" @click="cancel">✖</button>
+        </div>
+        <FormKit type="form" style="min-width: 500px; background-color: lightgrey; padding: 10px;">
             <FormKitSchema :schema="generatedSchema" />
         </FormKit>
     </div>
@@ -37,6 +40,14 @@ export default {
                 label: "Student Name",
                 help: "This is the name of the student",
                 value: this.student.student_name,
+                validation: "required"
+            },
+            {
+                $formkit: "text",
+                name: "surname",
+                label: "Student Surname",
+                help: "This is the surname of the student",
+                value: this.student.student_surname,
                 validation: "required"
             },
             {
@@ -77,6 +88,12 @@ export default {
 </script>
 
 <style>
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .modal {
     position: absolute;
     top: 50%;
@@ -89,10 +106,9 @@ export default {
 }
 
 .edit-cancel {
-    position: absolute;
-    right: 8%;
     background-color: red;
-    padding: 10px;
+    padding: 8px 12px 8px 12px; /* top right bottom left */
     border-radius: 5px;
+    cursor: pointer;
 }
 </style>

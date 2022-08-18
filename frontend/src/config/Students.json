@@ -2,6 +2,7 @@
     {
         "student_id": 0,
         "student_name": "Joubert",
+        "student_surname": "Van Zyl",
         "student_address": "95 Creekside St. Lake Mary, FL 32746",
         "student_email": "576731@student.belgiumcampus.ac.za",
         "student_password": "somegenericpasswprd123",
@@ -10,6 +11,7 @@
     {
         "student_id": 1,
         "student_name": "Piet",
+        "student_surname": "Ooos",
         "student_address": "434 Ashley Drive Roanoke, VA 24012",
         "student_email": "12456@student.belgiumcampus.ac.za",
         "student_password": "somegenericpasswprd123",
@@ -18,6 +20,7 @@
     {
         "student_id": 2,
         "student_name": "Koosie",
+        "student_surname": "Sokme",
         "student_address": "8692 Wilson Drive Brick, NJ 08723",
         "student_email": "654321@student.belgiumcampus.ac.za",
         "student_password": "somegenericpasswprd123",
@@ -26,6 +29,7 @@
     {
         "student_id": 3,
         "student_name": "Jannie",
+        "student_surname": "Koosa",
         "student_address": "649 Race Ave. Tacoma, WA 98444",
         "student_email": "123654@student.belgiumcampus.ac.za",
         "student_password": "somegenericpasswprd123",
@@ -34,6 +38,7 @@
     {
         "student_id": 4,
         "student_name": "Jan",
+        "student_surname": "KAKAKkka",
         "student_address": "55 Mayfield Rd. Saratoga Springs, NY 12866",
         "student_email": "321546@student.belgiumcampus.ac.za",
         "student_password": "somegenericpasswprd123",
@@ -42,6 +47,7 @@
     {
         "student_id": 5,
         "student_name": "Petrus",
+        "student_surname": "iUGIG",
         "student_address": "273 Golden Star St. Harleysville, PA 19438",
         "student_email": "145236@student.belgiumcampus.ac.za",
         "student_password": "somegenericpasswprd123",
@@ -50,6 +56,43 @@
     {
         "student_id": 6,
         "student_name": "Dummy",
+        "student_surname": "iugiuyg",
+        "student_address": "8888 Devonshire Road Clinton Township, MI 48035",
+        "student_email": "365214@student.belgiumcampus.ac.za",
+        "student_password": "somegenericpasswprd123",
+        "student_course": "Degree"
+    },
+    {
+        "student_id": 7,
+        "student_name": "Dummy",
+        "student_surname": "iugiuyg",
+        "student_address": "8888 Devonshire Road Clinton Township, MI 48035",
+        "student_email": "365214@student.belgiumcampus.ac.za",
+        "student_password": "somegenericpasswprd123",
+        "student_course": "Degree"
+    },
+    {
+        "student_id": 8,
+        "student_name": "Dummy",
+        "student_surname": "iugiuyg",
+        "student_address": "8888 Devonshire Road Clinton Township, MI 48035",
+        "student_email": "365214@student.belgiumcampus.ac.za",
+        "student_password": "somegenericpasswprd123",
+        "student_course": "Degree"
+    },
+    {
+        "student_id": 9,
+        "student_name": "Dummy",
+        "student_surname": "iugiuyg",
+        "student_address": "8888 Devonshire Road Clinton Township, MI 48035",
+        "student_email": "365214@student.belgiumcampus.ac.za",
+        "student_password": "somegenericpasswprd123",
+        "student_course": "Degree"
+    },
+    {
+        "student_id": 10,
+        "student_name": "Dummy",
+        "student_surname": "iugiuyg",
         "student_address": "8888 Devonshire Road Clinton Township, MI 48035",
         "student_email": "365214@student.belgiumcampus.ac.za",
         "student_password": "somegenericpasswprd123",

@@ -1,11 +1,12 @@
 <template>
     <div class="row">
-        <div class="column column-18">{{ student.student_name }}</div>
+        <div class="column column-11">{{ student.student_name }}</div>
+        <div class="column column-11">{{ student.student_surname }}</div>
         <div class="column column-32">{{ student.student_address }}</div>
         <div class="column column-32">{{ student.student_email }}</div>
-        <div class="column column-9">{{ student.student_course }}</div>
-        <div class="column column-9 buttons">
-            <button class="edit-buttons" @click="editClicked">Edit</button>
+        <div class="column column-7">{{ student.student_course }}</div>
+        <div class="column column-7 buttons">
+            <button class="edit-buttons" @click="editClicked">Update</button>
             <button class="edit-buttons" @click="deleteClicked">Delete</button>
         </div>
     </div>
@@ -38,12 +39,12 @@ export default {
     justify-content: center;
 }
 
-.column-9 {
-    width: 9%;
+.column-7 {
+    width: 7%;
 }
 
-.column-18 {
-    width: 18%;
+.column-11 {
+    width: 11%;
 }
 
 .column-32 {

@@ -1,49 +1,44 @@
 <template>
-    <div class="navbar">
+    <nav>
         <img class="logo" src="../assets/logo.png" />
         <div class="links">
-            <a class="link" href="">Home</a>
-            <a class="link" href="">Admin Portal</a>
-            <a class="link" href="">Signout</a>
+            <router-link to="/">Login</router-link> | 
+            <router-link to="/admin">Admin Portal</router-link> | 
+            <router-link to="/">Signout</router-link>
         </div>
-    </div>
+    </nav>
 </template>
 
 <script>
 </script>
 
 <style>
-.navbar {
+nav {
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     height: 100%;
     margin-left: 50px;
 }
 
-.links {}
-
-.link {
-    margin-left: 10px;
-    margin-right: 10px;
+.navbar a {
+    font-weight: bold;
+    color: #2c3e50;
 }
 
-a:link, a:visited {
-  background-color: white;
-  color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-a:hover, a:active {
-  background-color: green;
-  color: white;
+nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+.links {
+    margin-right: 25px;
 }
 </style>

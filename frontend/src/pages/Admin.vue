@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Navbar />
         <div style="padding:25px; background-color: honeydew;">
             <div class="header">
                 <h1 style="text-align:center">Student Admin Portal</h1>
@@ -30,7 +29,6 @@ import StudentListItem from '@/components/StudentListItem.vue'
 import StudentAdd from "@/components/StudentAdd.vue"
 import StudentEdit from "@/components/StudentEdit.vue"
 import StudentDelete from "@/components/StudentDelete.vue"
-import Navbar from "../components/Navbar.vue"
 
 export default {
     data() {
@@ -47,7 +45,6 @@ export default {
         StudentAdd,
         StudentEdit,
         StudentDelete,
-        Navbar,
     },
     methods: {
         addShow() {
@@ -86,6 +83,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 25px;
 }
 
 .heading-row {

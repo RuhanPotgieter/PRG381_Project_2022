@@ -12,7 +12,7 @@
 <script>
 //import { FormKit } from '@formkit/vue'
 import { FormKitSchema } from '@formkit/vue'
-import Login_data from '../config/Login.json'
+import Login_data from '../config/LoginSchema.json'
 
 export default {
   name: 'Login',

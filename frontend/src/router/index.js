@@ -2,7 +2,6 @@ import { createWebHistory, createRouter } from "vue-router"
 import Login from '../pages/Login.vue'
 import Admin from '../pages/Admin.vue'
 import Register from '../pages/Register.vue'
-import { register } from "@formkit/core"
 
 
 

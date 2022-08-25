@@ -5,7 +5,7 @@
             <router-link to="/">Login</router-link> | 
             <router-link to="/admin">Admin Portal</router-link> | 
             <router-link to="/register">Register Admin</router-link> |
-            <router-link to="/">Signout</router-link>
+            <router-link to="*">Signout</router-link>
         </div>
     </nav>
 </template>

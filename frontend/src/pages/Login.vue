@@ -1,12 +1,11 @@
 <template class="background">
-  <div class="LG-body">
+  <div class="modal">
     <h1>Login</h1>
     <FormKit type="form" submit-label="Login" @submit="login">
       <FormKitSchema :schema="Login_data" />
       
     </FormKit>
   </div>
-
 </template>
 
 <script>

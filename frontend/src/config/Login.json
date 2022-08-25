@@ -1,0 +1,16 @@
+[
+    {
+        "$formkit": "text",
+        "name": "email",
+        "label": "Email",
+        "help": "This will be used for your account.",
+        "validation": "required|email"
+      },
+      {
+        "$formkit": "password",
+        "name": "password",
+        "label": "Password",
+        "help": "Student password",
+        "validation": "required|length:5,35"
+      }
+]

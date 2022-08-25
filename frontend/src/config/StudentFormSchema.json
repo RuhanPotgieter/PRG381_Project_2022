@@ -1,0 +1,37 @@
+[
+  {
+    "$formkit": "text",
+    "name": "name",
+    "label": "Student Name",
+    "help": "This is the name of the student",
+    "validation": "required"
+  },
+  {
+    "$formkit": "text",
+    "name": "adress",
+    "label": "Student Address",
+    "help": "The residential address of the student",
+    "validation": "required"
+  },
+  {
+    "$formkit": "text",
+    "name": "email",
+    "label": "Email",
+    "help": "This will be used for your account.",
+    "validation": "required|email"
+  },
+  {
+    "$formkit": "password",
+    "name": "password",
+    "label": "Password",
+    "help": "Student password",
+    "validation": "required|length:5,35"
+  },
+  {
+    "$formkit": "text",
+    "name": "course",
+    "label": "Student Course",
+    "help": "The course of the student",
+    "validation": "required"
+  }
+]

@@ -1,8 +1,13 @@
 <template>
     <div>
         <div style="padding:25px;">
-            <h1 style="text-align:center">Student Admin Portal</h1>
-            <button class="add">Add Student</button>
+            <div class="page-header">
+                <h1 style="text-align:center">Student Admin Portal</h1>
+                <div class="actions">
+                    <button class="add">Add Student</button>
+                </div>
+            </div>
+
             <div class="heading-row">
                 <div class="heading-column heading-column-18">Name</div>
                 <div class="heading-column heading-column-32">Address</div>
@@ -23,6 +28,7 @@ import Students from '../config/Students.json'
 import StudentListItem from '@/components/StudentListItem.vue'
 import StudentEdit from "@/components/StudentEdit.vue"
 import StudentDelete from "@/components/StudentDelete.vue"
+import Navbar from "../components/Navbar.vue"
 
 export default {
     data() {
@@ -34,10 +40,11 @@ export default {
         }
     },
     components: {
-        StudentListItem,
-        StudentEdit,
-        StudentDelete
-    },
+    StudentListItem,
+    StudentEdit,
+    StudentDelete,
+    Navbar
+},
     methods: {
         editShow(id) {
             this.student = this.Students[id]
@@ -105,7 +112,6 @@ export default {
 }
 
 .add {
-    position: absolute;
     top: 15px;
     right: 15px;
     background-color: lightgreen;

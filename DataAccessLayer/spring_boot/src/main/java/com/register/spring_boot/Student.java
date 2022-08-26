@@ -1,9 +1,15 @@
 package com.register.spring_boot;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Student {
@@ -11,8 +17,7 @@ public class Student {
     private String student_name, student_surname, student_address, student_email, student_password;
     private int student_course;
 
-    @OneToMany(mappedBy = "student")
-
+    
     public Student() {
     }
 
@@ -120,4 +125,7 @@ public class Student {
         setStudent_course(student_course);
         return this;
     }
+
+    @OneToMany(mappedBy = "student")
+    private Set<Register> recordings = new HashSet<>();
 }

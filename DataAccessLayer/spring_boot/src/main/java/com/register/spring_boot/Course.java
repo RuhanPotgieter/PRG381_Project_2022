@@ -1,18 +1,20 @@
 package com.register.spring_boot;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Course {
     private long course_id;
     private String course_name;
     private double tuition;
-
-    @OneToMany(mappedBy = "student_course")
-
+    
     public Course() {
     }
 
@@ -62,4 +64,7 @@ public class Course {
         setTuition(tuition);
         return this;
     }
+
+    @OneToMany(mappedBy = "student_course")
+    private Set<Student> recordings = new HashSet<>();
 }

@@ -1,17 +1,20 @@
 package com.register.spring_boot;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Subject {
     private long subject_id;
     private String subject_name;
 
-    @OneToMany(mappedBy = "subject")
-
+    
     public Subject() {
     }
 
@@ -47,4 +50,7 @@ public class Subject {
         setSubject_name(subject_name);
         return this;
     }
+
+    @OneToMany(mappedBy = "subject")
+    private Set<Register> recordings = new HashSet<>();
 }

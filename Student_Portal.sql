@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `Student_Portal`.`Course` ;
 CREATE TABLE IF NOT EXISTS `Student_Portal`.`Course` (
   `course_id` INT NOT NULL AUTO_INCREMENT,
   `course_name` VARCHAR(45) NOT NULL,
-  `course_tuition` FLOAT NOT NULL,
+  `course_tuition` DOUBLE NOT NULL,
   PRIMARY KEY (`course_id`),
   UNIQUE INDEX `course_name_UNIQUE` (`course_name` ASC) VISIBLE)
 ENGINE = InnoDB;

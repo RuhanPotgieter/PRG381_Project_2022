@@ -63,17 +63,5 @@ public class DataHandler{
     public void setStudent_course(String student_course) {
         this.student_course = student_course;
     }
-    public Boolean Login(String email, String password){
-        Collection<DataHandler> users = new ArrayList<DataHandler>();
-        for(DataHandler u : users){
-            if  (email == u.getEmail() && password == u.getPassword())
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-    }
+
 }

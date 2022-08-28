@@ -1,0 +1,16 @@
+[
+{
+    "$formkit": "text",
+    "name": "UserName",
+    "label": "User Name",
+    "help": "This is the name of the User Admin",
+    "validation": "required"
+  },
+  {
+    "$formkit": "text",
+    "name": "password",
+    "label": "User password",
+    "help": "This is the password of the User Admin, keep it secret",
+    "validation": "required|length:5,35"
+  }
+]

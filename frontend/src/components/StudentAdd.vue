@@ -4,15 +4,19 @@
             <h2>Add Student</h2>
             <button class="edit-cancel" @click="cancel">✖</button>
         </div>
-        <FormKit type="form" style="min-width: 500px; background-color: lightgrey; padding: 10px;">
+        <FormKit @submit="onSubmit" type="form" style="min-width: 500px; background-color: lightgrey; padding: 10px;">
             <FormKitSchema :schema="StudentFormSchema" />
+
         </FormKit>
     </div>
 </template>
 
 <script>
+
+import { register } from '@formkit/core'
 import { FormKitSchema } from '@formkit/vue'
 import StudentFormSchema from "../config/StudentFormSchema.json"
+import API from '../services/api.js'
 export default {
     name: 'StudentAdd',
     components: {
@@ -29,6 +33,9 @@ export default {
     methods: {
         cancel() {
             this.$emit('cancel')
+        },
+        onSubmit(e){
+            API.registerStudent(e);
         }
     },
 }

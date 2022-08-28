@@ -4,7 +4,7 @@
             <div class="page-header">
                 <h1 style="text-align:center">Student Admin Portal</h1>
                 <div class="actions">
-                    <button class="add">Add Student</button>
+                    <button class="add"  @click="bShowAddModal = true">Add Student</button>
                 </div>
             </div>
 
@@ -18,6 +18,7 @@
             <StudentListItem v-for="student in Students" :key="student.student_id" :student="student" @edit="editShow" @delete="deleteShow" />
             
         </div>
+        <StudentAdd v-if="bShowAddModal"  @cancel="bShowAddModal=false" />
         <StudentEdit v-if="bShowEditModal" :student="student" @cancel="editCancel" />
         <StudentDelete v-if="bShowDeleteModal" :student="student" @cancel="deleteCancel" />
     </div>
@@ -29,6 +30,7 @@ import StudentListItem from '@/components/StudentListItem.vue'
 import StudentEdit from "@/components/StudentEdit.vue"
 import StudentDelete from "@/components/StudentDelete.vue"
 import Navbar from "../components/Navbar.vue"
+import StudentAdd from '@/components/StudentAdd.vue'
 
 export default {
     data() {
@@ -37,13 +39,15 @@ export default {
             student: null,
             bShowEditModal: false,
             bShowDeleteModal: false,
+            bShowAddModal: false
         }
     },
     components: {
     StudentListItem,
     StudentEdit,
     StudentDelete,
-    Navbar
+    Navbar,
+    StudentAdd
 },
     methods: {
         editShow(id) {
